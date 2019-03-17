@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+layout:decorator="template1" >   <!--  ceci est obligatoire dans la balise html -->
+<head>
+<meta charset="utf-8"/>   <!--  Puisque thymeleaf utilise XHTML , il faudrai   fermer les balises ( et changer "ISO-8859-1" par "utf-8"/  -->
+<title>Votre Banque</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="col-md-6 col-md-offset-3"> <!--  càd , la moitier --> 
+				<div class="panel panel-primary">
+					<div class="panel-heading"> Probleme d'autorisation</div>
+					<div class="panel-body">
+						<div class="red">Vous n'avez pas le droit d'acceder a cette ressource</div>
+					 </div>
+				</div> 
+		 </div> 
+	</div>  
+</body>
+</html>
